@@ -7,7 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class RentPayment {
+public class packers {
 
 	public static void main(String[] args) throws InterruptedException {
 		
@@ -26,7 +26,7 @@ public class RentPayment {
 		Thread.sleep(3000);
 		driver.findElement(By.id("login-signup-form-login-radio-password")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("login-signup-form__password-input")).sendKeys("supriya");
+		driver.findElement(By.id("login-signup-form__password-input")).sendKeys("supr8211");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
 

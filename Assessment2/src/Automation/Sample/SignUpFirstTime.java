@@ -12,21 +12,19 @@ public class SignUpFirstTime {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.nobroker.in/");
 		
-
-	
-		driver.findElement(By.xpath("(//div[@class='nb__19hcF'])[2]")).click();
+		driver.findElement(By.xpath("(//div[@class='nb__19hcF'])[1]")).click();
 		driver.findElement(By.xpath("//input[@type='tel']")).click();
 		driver.findElement(By.xpath("//input[@type='tel']")).sendKeys("7997484693");
 		driver.findElement(By.xpath("//div[@class='nb-switch-toggle xs']")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.id("login-signup-form-login-radio-password")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.id("login-signup-form__password-input")).sendKeys("umes2705");
-	
+		
+		driver.findElement(By.id("login-signup-form__name-input")).click();
+		driver.findElement(By.id("login-signup-form__name-input")).sendKeys("supriya");
+		driver.findElement(By.id("login-signup-form__email-input")).click();
+		driver.findElement(By.id("login-signup-form__email-input")).sendKeys("supriyayadala@gmail.com");
 		driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
 		
-		Thread.sleep(2000);
-		
+		Thread.sleep(3000);
+		driver.close();
 	}
 
 }

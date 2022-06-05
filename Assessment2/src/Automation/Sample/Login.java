@@ -24,8 +24,8 @@ public class Login {
 		Thread.sleep(3000);
 		driver.findElement(By.id("login-signup-form-login-radio-password")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("login-signup-form__password-input")).sendKeys("umes2705");
-		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("supr8211");
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
 		
 		Thread.sleep(2000);
